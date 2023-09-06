@@ -13,7 +13,7 @@ jobs:
       - name: Run Tosca Tests on Andrew's VM
         shell: pwsh
         run: |  
-          .\tosca_execution_client.ps1 -toscaServerUrl "https://e7b8-77-248-179-205.ngrok-free.app" -projectName "Tricentis_Main" -eventsConfigFilePath "TestEvents.json" -clientId "u2pFVfQPnEC5lbUgEiEc4w" -clientSecret "p0vBGIfkY0u6IIC3TwMnhg3zBOhM8Bnk6RyvrUO2ZI3Q" -creator "Github-ToscaExecutionClient" -debug "true" -pollingInterval 10
+          .\tosca_execution_client.ps1 -toscaServerUrl "https://e7b8-77-248-179-205.ngrok-free.app" -projectName "Tricentis_Main" -eventsConfigFilePath "TestEvents.json" -clientId "u2pFVfQPnEC5lbUgEiEc4w" -clientSecret "p0vBGIfkY0u6IIC3TwMnhg3zBOhM8Bnk6RyvrUO2ZI3Q" -creator "Github-ToscaExecutionClient" -debug "true" -executionEnvironment "Dex" -pollingInterval 10
       - name: Process JUnit Results
         uses: mikepenz/action-junit-report@v3
         if: always()
