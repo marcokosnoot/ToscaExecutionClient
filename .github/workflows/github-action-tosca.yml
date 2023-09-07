@@ -1,5 +1,5 @@
 name: GitHub Action For Running Tosca
-run-name: ${{ github.actor }} is Running Tosca Tests via the AOS API 🚀
+run-name: ${{ github.actor }} is Running Tosca Tests via the AOS API! 🚀
 on: [push]
 jobs:
   Execute-Tosca-Tests:
